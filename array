@@ -1,0 +1,37 @@
+
+#loop em uma lsita
+for umaFruta in listaFrutas:
+  print(umaFruta)
+
+#modificando um elemento de uma lsita
+listaFrutas[0] = "Melância"
+print(listaFrutas)
+
+#adicionando elementos em uma lista
+listaFrutas.append("pitaya")
+print(listaFrutas)
+
+#Removendo elementos de uma lsita
+listaFrutas.remove("pitaya")
+listaFrutas.pop(0)
+print(listaFrutas)
+
+#Medindo o tamanho de uma lista
+print(len(listaFrutas))
+
+#Verificando se uma lista está vazia
+if len(listaFrutas) == 0:
+  print("lsita está vazia")
+else:
+  print("lista NÃO está vazia")
+
+#Verificando ocorrência em uma lista
+print(listaFrutas.__contains__("mamão"))
+
+#Trabalhando com conjuntos (Sets)
+#Listas que não aceitam dados duplicados e sem indices
+conjuntoVGAtuais = {"PS5", "Xbox Series", "Switch", "PS5"}
+print(conjuntoVGAtuais)
+for umVGatual in conjuntoVGAtuais:
+  print(umVGatual)
+  break
